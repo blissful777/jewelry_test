@@ -1,0 +1,40 @@
+.header {
+    height: 100px;
+    background: linear-gradient(0deg, #464341 0%, #010101 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+.header_phone-number {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header_phone-svg {
+    display: none;
+}
+
+@media screen and (max-width: 426px) {
+    .header{
+        height: 60px;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .header_phone-number {
+        display: none;
+    }
+
+    .header_phone-svg {
+        display: block;
+    }
+
+    .header_logo {
+        width: 100px;
+        height: 20px;
+        text-align:start ;
+    }
+}
